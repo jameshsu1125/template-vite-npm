@@ -1,6 +1,7 @@
 {
   "name": "template-npm-vite",
-  "private": true,
+  "private": false,
+  "description": "xxxxx",
   "version": "0.0.0",
   "type": "module",
   "files": [
