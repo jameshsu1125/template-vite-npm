@@ -110,7 +110,7 @@ export default class ImagePreloader {
       styleProp = styleProp.replace(/([A-Z])/g, '-$1').toLowerCase();
       return defaultView.getComputedStyle(el, null).getPropertyValue(styleProp);
     } else if (el['currentStyle']) {
-      styleProp = styleProp.replace(/\-(\w)/g, function (str, letter) {
+      styleProp = styleProp.replace(/\-(\w)/g, function (_, letter) {
         return letter.toUpperCase();
       });
       value = el['currentStyle'][styleProp];
