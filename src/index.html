@@ -13,11 +13,9 @@
     <div id="app"></div>
     <script type="module" src="./index.ts"></script>
     <script type="module">
-      import ImagePreloader from '../lib/index.js';
+      import YourClass from '../lib/index.js';
 
-      new ImagePreloader().load(document.getElementById('app')).then(() => {
-        console.log('Images preloaded');
-      });
+      console.log(YourClass);
     </script>
   </body>
 </html>
